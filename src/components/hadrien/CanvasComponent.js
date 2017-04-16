@@ -5,8 +5,8 @@ import React from 'react';
 require('styles/hadrien/Canvas.css');
 
 let CanvasComponent = (props) => (
-  <div className="canvas-component">
-    props.children
+  <div className='canvas-component'>
+    { props.children }
   </div>
 );
 
