@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-require('styles/hadrien/Motor.css');
+require('styles/hadrien/Motor.styl');
 
 class MotorComponent extends React.Component {
 

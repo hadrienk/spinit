@@ -1,11 +1,13 @@
 .motor-component {
-  border: 1px dashed #7F7F7F;
   width: 88px;
   height: 88px;
   margin: 5px;
   float: left;
   position: relative;
   border-radius: 45px;
+  .debug {
+    border: 1px dashed #7F7F7F;
+  }
 }
 
 .motor-component .axis {
@@ -23,6 +25,10 @@
   min-width: 8px;
   text-align: center;
   border-radius: 2px;
+  display: none;
+  .debug {
+    display: block
+  }
 }
 
 .pin.on {
@@ -66,9 +72,14 @@
 
 .motor-component .axis {
   background: black;
-  background: -moz-linear-gradient(top, #c12d2d 0%, #000000 20%, #000000 80%, #3f3fa0 100%);
-  background: -webkit-linear-gradient(top, #c12d2d 0%,#000000 20%,#000000 80%, #3f3fa0 100%);
-  background: linear-gradient(to bottom, #c12d2d 0%,#000000 20%,#000000 80%, #3f3fa0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#455df7',GradientType=0 );
 
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(168,168,168,1);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(168,168,168,1);
+  box-shadow: 0px 0px 2px 1px rgba(168,168,168,1);
+
+  .debug {
+    background: -moz-linear-gradient(top, #c12d2d 0%, #000000 20%, #000000 80%, #3f3fa0 100%);
+    background: -webkit-linear-gradient(top, #c12d2d 0%, #000000 20%, #000000 80%, #3f3fa0 100%);
+    background: linear-gradient(to bottom, #c12d2d 0%, #000000 20%, #000000 80%, #3f3fa0 100%);
+  }
 }
