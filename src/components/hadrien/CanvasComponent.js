@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-require('styles/hadrien/Canvas.css');
+require('styles/hadrien/Canvas.styl');
 
 let CanvasComponent = (props) => (
   <div className='canvas-component'>
