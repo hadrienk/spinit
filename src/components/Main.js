@@ -6,15 +6,10 @@ import Motor from './hadrien/MotorComponent.js';
 import Canvas from './hadrien/CanvasComponent.js';
 import AceEditor from 'react-ace';
 
-//import brace from 'brace';
-
 import 'brace/mode/lua';
 import 'brace/theme/github';
 
-let yeomanImage = require('../images/yeoman.png');
-
 class AppComponent extends React.Component {
-
 
   render() {
 
@@ -33,6 +28,10 @@ class AppComponent extends React.Component {
 
     return (
       <div className='index'>
+        { canvas }
+        <br/>
+        <br/>
+        <br/>
         <AceEditor
           mode="lua"
           theme="github"
@@ -40,9 +39,6 @@ class AppComponent extends React.Component {
           name="UNIQUE_ID_OF_DIV"
           editorProps={{$blockScrolling: true}}
         />
-        { canvas }
-        <img src={yeomanImage} alt='Yeoman Generator'/>
-        <div className='notice'>Please edit <code>src/components/Main.js</code> to get started!</div>
       </div>
     );
   }

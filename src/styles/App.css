@@ -1,7 +1,11 @@
 /* Base Application Styles */
 body {
   color: #111;
-  background: #fff;
+  background: #fbfaf3;
+  background: -moz-radial-gradient(center, ellipse cover, #fbfaf3 0%, #e1e1d9 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #fbfaf3 0%,#e1e1d9 100%);
+  background: radial-gradient(ellipse at center, #fbfaf3 0%,#e1e1d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfaf3', endColorstr='#e1e1d9',GradientType=1 );
 }
 
 .index img {

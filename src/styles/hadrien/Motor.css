@@ -1,9 +1,7 @@
 .motor-component {
-  border: 1px dashed #f00;
+  border: 1px dashed #7F7F7F;
   width: 88px;
   height: 88px;
-  background-color: #FFF;
-  background-color: rgba(127, 127, 127, 0.05);
   margin: 5px;
   float: left;
   position: relative;
@@ -37,24 +35,24 @@
 
 .motor-component .pin.pin4 {
   top: 50%;
-  left: 0;
+  left: -4px;
   margin-top: -4px;
 }
 
 .motor-component .pin.pin3 {
   top: 50%;
-  right: 0;
+  right: -4px;
   margin-top: -4px;
 }
 
 .motor-component .pin.pin2 {
-  bottom: 0;
+  bottom: -4px;
   left: 50%;
   margin-left: -4px;
 }
 
 .motor-component .pin.pin1 {
-  top: 0;
+  top: -4px;
   left: 50%;
   margin-left: -4px;
 }
@@ -68,13 +66,9 @@
 
 .motor-component .axis {
   background: black;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(red, black, blue);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(red, black, blue);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(red, black, blue);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(red, black, blue);
-  /* Standard syntax */
+  background: -moz-linear-gradient(top, #c12d2d 0%, #000000 20%, #000000 80%, #3f3fa0 100%);
+  background: -webkit-linear-gradient(top, #c12d2d 0%,#000000 20%,#000000 80%, #3f3fa0 100%);
+  background: linear-gradient(to bottom, #c12d2d 0%,#000000 20%,#000000 80%, #3f3fa0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#455df7',GradientType=0 );
+
 }

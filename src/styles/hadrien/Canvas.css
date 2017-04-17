@@ -1,8 +1,20 @@
 .canvas-component {
   width: 500px;
-  border: 1px dashed #f00;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 50px auto;
+
+  background: #fefffd;
+  background: -moz-linear-gradient(top, #fefffd 4%, #fefffd 4%, #f7f7f3 56%, #f7f7f3 100%);
+  background: -webkit-linear-gradient(top, #fefffd 4%, #fefffd 4%, #f7f7f3 56%, #f7f7f3 100%);
+  background: linear-gradient(to bottom, #fefffd 4%, #fefffd 4%, #f7f7f3 56%, #f7f7f3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefffd', endColorstr='#f7f7f3', GradientType=0);
+
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+
+  -webkit-box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.26), 0px 15px 5px 2px rgba(0, 0, 0, 0.23), 0px -20px 100px -30px rgba(255, 255, 255, 1), inset 0px 1px 2px 0px rgb(101, 101, 101);
+  -moz-box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.26), 0px 15px 5px 2px rgba(0, 0, 0, 0.23), 0px -20px 100px -30px rgba(255, 255, 255, 1), inset 0px 1px 2px 0px rgb(101, 101, 101);
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.26), 0px 15px 5px 2px rgba(0, 0, 0, 0.23), 0px -20px 100px -30px rgba(255, 255, 255, 1), inset 0px 1px 2px 0px #FFF, inset 0px -1px 2px 0px rgb(101, 101, 101);
 }
 
 .canvas-component::after {
